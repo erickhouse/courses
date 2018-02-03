@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1477699177045.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "8E72B749",
+    "lastKnownWriteTime" : 1477699187,
+    "last_content_update" : 1477699187512,
+    "path" : "~/SourceTree/Udacity/Intro_Inferential_Statistics/Lesson8.R",
+    "project_path" : "Lesson8.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

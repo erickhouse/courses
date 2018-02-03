@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "\nklout <- read.csv(\"klout_scores.csv\")\n\nkdata <- klout[,1]\nm <- mean(kdata)\nstd.dev <- sd(kdata)\n\n#std error is the standard deviation devided by the square root length of the sample size\nstd.error <- function(data.set, sample.size) sd(data.set)/sqrt(sample.size)\nstd.error2 <- function(x) sd(x)/sqrt(length(x))\n\nstd.error(kdata, 250)\n\n#z score of 40 is the population mean / the std dev of the population mean\nz.score <- (40 - mean(kdata)) / std.error(kdata, 250)\n\nprobability.of.40.in.our.sample.mean <- 1- pnorm(z.score)\n\n#little project at the end\n\n#pick a random value from the data\nvalue <- kdata[50]\nrandom.numbers.in.set <- as.integer(runif(5, 1, 1048))\nmean.of.random.num <- mean(kdata[random.numbers.in.set])\n\nrandom.numbers.in.set.2 <- as.integer(runif(10, 1, 1048))\nmean.of.random.num.2 <- mean(kdata[random.numbers.in.set.2])\n\nset.seed(10)\nx <- as.integer(runif(10, 1, 10))\ny <- as.integer(runif(10, 1, 10))\n\n\ntest <- function(x, y) {\n  \n  output <- vector()\n\n  for (i in length(x)) {\n    output[i] <- x[i] + y[i]\n    \n  } \n  return(output)\n}\n\nresult <- test(x, y)\n\n\n\n",
+    "created" : 1477637920602.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3225511501",
+    "id" : "29E022E5",
+    "lastKnownWriteTime" : 1478140242,
+    "last_content_update" : 1478140242969,
+    "path" : "~/SourceTree/Udacity/Intro_Inferential_Statistics/Lesson7.R",
+    "project_path" : "Lesson7.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

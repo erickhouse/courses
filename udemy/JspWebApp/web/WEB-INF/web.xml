@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <servlet>
+        <servlet-name>web.app.jdbc.StudentController</servlet-name>
+        <servlet-class>web.app.jdbc.StudentController</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>web.app.jdbc.StudentController</servlet-name>
+        <url-pattern>/web.app.jdbc.StudentController</url-pattern>
+    </servlet-mapping>
+
+</web-app>
+
