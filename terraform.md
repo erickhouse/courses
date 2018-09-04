@@ -1,6 +1,6 @@
 ### Core concepts
 
-It's basically just a JSON language extension and a libarary of pre-defined resources that you can reference in order to "compose" you app. 
+It's basically just a JSON language extension and a libarary of pre-defined resources that you can reference in order to "compose" your app. 
 
 - resources
   - items in the cloud that you want to build instances of. There is documentaion for each and every resource. You reference it by name. 
