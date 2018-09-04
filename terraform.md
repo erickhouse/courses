@@ -18,3 +18,9 @@ It's basically just a JSON language extension and a libarary of pre-defined reso
 ### Start up
 
 terraform is just a exe that you download. Need to add the system path (env vars) to where you placed the exe. 
+
+
+### Notes
+
+- variables.tf vs .tfvars
+  - variables.tf is a place where you define variables that will enter the script but they could be empty or have a default value (this is    almost exactly how arguments in a function are described). .tfvars is for actually providing concrete instances of each variable. Each    environment would have its own .tfvars file. 
