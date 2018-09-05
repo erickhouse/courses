@@ -31,3 +31,4 @@ maintains terraform state with a `.tfstate` file which needs to be synced.
 
 - variables.tf vs .tfvars
   - variables.tf is a place where you define variables that will enter the script but they could be empty or have a default value (this is    almost exactly how arguments in a function are described). .tfvars is for actually providing concrete instances of each variable. Each    environment would have its own .tfvars file. 
+- documentaion is extremely well defined. It gives you a very clear understanding of the configuration option for each resource. It is a good place to look for how something works. 
