@@ -20,6 +20,13 @@ It's basically just a JSON language extension and a libarary of pre-defined reso
 terraform is just a exe that you download. Need to add the system path (env vars) to where you placed the exe. 
 
 
+### Work Flow
+
+1. `terraform init` downloads missing dependencies and creates a local folder
+2. `terraform apply` does and diff and determines what will happen (execution plan). Create? Update? Delete?
+maintains terraform state with a `.tfstate` file which needs to be synced. 
+
+
 ### Notes
 
 - variables.tf vs .tfvars
