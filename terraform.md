@@ -14,6 +14,8 @@ It's basically just a JSON language extension and a libarary of pre-defined reso
   - a place to define inputs to the script (arguments)
 - output
   - can be queried by the user after the resource has been created (return values)
+- modules
+  - A black box of infastructure that you can compose as part of your script. Modules can be distributed so you can have one "master"     script that simply references other modules that are defined within their own git repo. There are some specical rules when dealing       with modules inside your script.
   
 ### Start up
 
