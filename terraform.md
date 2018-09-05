@@ -26,7 +26,18 @@ terraform is just a exe that you download. Need to add the system path (env vars
 2. `terraform apply` does and diff and determines what will happen (execution plan). Create? Update? Delete?
 maintains terraform state with a `.tfstate` file which needs to be synced. 
 
+### Best Practices
 
+A basic project structure might look something like this
+
+```
+root\
+  provider.tf
+  main.tf
+  variables.tf
+  output.tf
+```
+  
 ### Notes
 
 - variables.tf vs .tfvars
