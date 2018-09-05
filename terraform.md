@@ -27,7 +27,8 @@ terraform is just a exe that you download. Need to add the system path (env vars
 1. `terraform init` downloads missing dependencies and creates a local folder
 2. `terraform apply` does and diff and determines what will happen (execution plan). Create? Update? Delete?
 maintains terraform state with a `.tfstate` file which needs to be synced. 
-3. `terraform destroy` cleans up all the resources
+3. `terraform show` displays the values that were defined in the output variables
+4. `terraform destroy` cleans up all the resources
 
 ### Best Practices
 
